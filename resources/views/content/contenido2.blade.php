@@ -127,34 +127,139 @@
 
 
 
-    <!-- Relationship Map Section -->
-    <div class="max-w-6xl mx-auto mb-20">
-      <h2 class="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-yellow-400">
-        Mapa de Relaciones entre Disciplinas
-      </h2>
-      <div class="bg-blue-800/50 backdrop-blur-md rounded-2xl p-8 border border-cyan-400/20">
-        <div class="relative h-96">
-          <!-- This would be replaced with an actual relationship visualization -->
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-64 h-64 rounded-full border-4 border-yellow-400 animate-pulse"></div>
-            <div class="w-48 h-48 rounded-full border-4 border-cyan-400 absolute top-10 left-20 animate-pulse delay-100"></div>
-            <div class="w-48 h-48 rounded-full border-4 border-fuchsia-400 absolute bottom-10 right-20 animate-pulse delay-200"></div>
-            <div class="w-32 h-32 rounded-full border-4 border-yellow-400 absolute top-1/4 right-1/4 animate-pulse delay-300"></div>
-            <div class="w-32 h-32 rounded-full border-4 border-cyan-400 absolute bottom-1/4 left-1/4 animate-pulse delay-500"></div>
-          </div>
-          <div class="absolute top-0 left-0 bg-yellow-400/90 text-blue-900 px-4 py-2 rounded-lg font-bold">Capoeira</div>
-          <div class="absolute top-0 right-0 bg-cyan-400/90 text-blue-900 px-4 py-2 rounded-lg font-bold">Parkour</div>
-          <div class="absolute bottom-0 left-0 bg-fuchsia-400/90 text-blue-900 px-4 py-2 rounded-lg font-bold">Breakdance</div>
-          <div class="absolute bottom-0 right-0 bg-yellow-400/90 text-blue-900 px-4 py-2 rounded-lg font-bold">Freerunning</div>
-          <div class="absolute top-1/2 left-1/4 bg-cyan-400/90 text-blue-900 px-4 py-2 rounded-lg font-bold">Calistenia</div>
-          <div class="absolute top-1/2 right-1/4 bg-fuchsia-400/90 text-blue-900 px-4 py-2 rounded-lg font-bold">Cliff Jumping</div>
-        </div>
-        <p class="mt-8 text-center text-cyan-200 max-w-3xl mx-auto">
-          Todas estas disciplinas comparten elementos de movimiento corporal, expresión artística y desarrollo físico, aunque cada una tiene su enfoque único y especializado.
-        </p>
+    <!-- Relationship Map Section - Mejorado -->
+<div class="max-w-6xl mx-auto mb-20 relative">
+    <h2 class="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-emerald-400">
+      Mapa de Conexiones entre Disciplinas
+    </h2>
+    
+    <div class="bg-slate-800/50 backdrop-blur-md rounded-2xl p-8 border border-emerald-400/20 relative overflow-hidden">
+      <!-- Efecto de partículas de fondo -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-3 h-3 bg-amber-400/30 rounded-full animate-float" style="animation-delay: 0s"></div>
+        <div class="absolute top-1/3 right-1/3 w-2 h-2 bg-emerald-400/30 rounded-full animate-float" style="animation-delay: 0.5s"></div>
+        <div class="absolute bottom-1/4 left-1/3 w-4 h-4 bg-purple-400/30 rounded-full animate-float" style="animation-delay: 1s"></div>
+        <div class="absolute bottom-1/3 right-1/4 w-3 h-3 bg-cyan-400/30 rounded-full animate-float" style="animation-delay: 1.5s"></div>
       </div>
+      
+      <div class="relative h-96">
+        <!-- Líneas de conexión animadas -->
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <!-- Línea Capoeira-Breakdance -->
+          <path d="M20,30 Q50,40 35,60" stroke="url(#gradient1)" stroke-width="0.8" fill="none" stroke-dasharray="5,3" class="animate-dash">
+            <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" repeatCount="indefinite"/>
+          </path>
+          <!-- Línea Parkour-Freerunning -->
+          <path d="M65,30 Q50,50 75,60" stroke="url(#gradient2)" stroke-width="0.8" fill="none" stroke-dasharray="5,3" class="animate-dash">
+            <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+          </path>
+          <!-- Línea Calistenia-CliffJumping -->
+          <path d="M40,70 Q50,80 60,70" stroke="url(#gradient3)" stroke-width="0.8" fill="none" stroke-dasharray="5,3" class="animate-dash">
+            <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" begin="1s" repeatCount="indefinite"/>
+          </path>
+          
+          <!-- Definición de gradientes para las líneas -->
+          <defs>
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#f59e0b" />
+              <stop offset="100%" stop-color="#ec4899" />
+            </linearGradient>
+            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#10b981" />
+              <stop offset="100%" stop-color="#3b82f6" />
+            </linearGradient>
+            <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#8b5cf6" />
+              <stop offset="100%" stop-color="#ec4899" />
+            </linearGradient>
+          </defs>
+        </svg>
+        
+        <!-- Nodos de disciplinas con animación -->
+        <div class="absolute top-[30%] left-[20%] transform -translate-x-1/2 -translate-y-1/2">
+          <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center shadow-lg animate-pulse-slow border-2 border-amber-300">
+            <span class="text-white font-bold text-sm">Capoeira</span>
+          </div>
+        </div>
+        
+        <div class="absolute top-[30%] right-[20%] transform translate-x-1/2 -translate-y-1/2">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg animate-pulse-slow border-2 border-purple-300">
+            <span class="text-white font-bold text-sm">Breakdance</span>
+          </div>
+        </div>
+        
+        <div class="absolute top-[60%] left-[35%] transform -translate-x-1/2 -translate-y-1/2">
+          <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center shadow-lg animate-pulse-slow border-2 border-emerald-300">
+            <span class="text-white font-bold text-sm">Parkour</span>
+          </div>
+        </div>
+        
+        <div class="absolute top-[60%] right-[35%] transform translate-x-1/2 -translate-y-1/2">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg animate-pulse-slow border-2 border-blue-300">
+            <span class="text-white font-bold text-sm">Freerunning</span>
+          </div>
+        </div>
+        
+        <div class="absolute bottom-[20%] left-[40%] transform -translate-x-1/2 translate-y-1/2">
+          <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center shadow-lg animate-pulse-slow border-2 border-cyan-300">
+            <span class="text-white font-bold text-sm">Calistenia</span>
+          </div>
+        </div>
+        
+        <div class="absolute bottom-[20%] right-[40%] transform translate-x-1/2 translate-y-1/2">
+          <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center shadow-lg animate-pulse-slow border-2 border-red-300">
+            <span class="text-white font-bold text-sm">Cliff Jumping</span>
+          </div>
+        </div>
+      </div>
+      
+      <p class="mt-8 text-center text-emerald-200 max-w-3xl mx-auto">
+        Estas disciplinas comparten elementos de movimiento corporal, expresión artística y desarrollo físico, 
+        creando una red interconectada de habilidades urbanas.
+      </p>
     </div>
+  </div>
   
+  <!-- Animaciones adicionales -->
+  <style>
+    @keyframes dash {
+      from { stroke-dashoffset: 100; }
+      to { stroke-dashoffset: 0; }
+    }
+    .animate-dash {
+      animation: dash 3s linear infinite;
+    }
+    @keyframes pulse-slow {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .animate-pulse-slow {
+      animation: pulse-slow 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Gallery & Videos Section -->
     <div class="max-w-6xl mx-auto mb-20">
       <h2 class="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-cyan-400">
