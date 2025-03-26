@@ -4,12 +4,13 @@
 
 
 
-@include('content.contenido1')
+@include('content.contenido2')
 
 
 
-<x-slot:sidebar>
-home sidebar
-</x-slot:sidebar>
+
+
+
+
 
 </x-layout>

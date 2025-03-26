@@ -1,8 +1,10 @@
 <x-layout meta-title="nosotros" meta-description="nosotros description">
 
 
-    nosotros
-        
+   
+@include('content.contenido3')
+
+
         
     </x-layout>
         
