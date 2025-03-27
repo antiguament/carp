@@ -140,7 +140,7 @@
         <div class="relative aspect-video">
           <iframe 
             class="w-full h-full" 
-            src="https://www.youtube.com/embed/9W0gCgxwBz0?rel=0" 
+            src="https://www.youtube.com/watch?v=WUOjLzn4y1c?rel=0" 
             title="Toques básicos de Berimbau" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

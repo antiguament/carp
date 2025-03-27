@@ -139,9 +139,9 @@
             <!-- Video 4 - Esquivas -->
             <div class="video-card group" data-video-id="aTh9OScnSLc" data-title="Esquivas Dinámicas" data-desc="Técnicas de esquiva que combinan fluidez y preparación para el contraataque.">
                 <div class="video-thumbnail relative rounded-xl overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-amber-400/30">
-                    <img src="https://img.youtube.com/watch?v=r1qsT2feZcI/maxresdefault.jpg" alt="Esquivas Dinámicas" class="w-full h-full object-cover aspect-video">
+                    <img src="https://img.youtube.com/watch?v=WUOjLzn4y1c/maxresdefault.jpg" alt="Esquivas Dinámicas" class="w-full h-full object-cover aspect-video">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent flex items-end p-4">
-                        <h3 class="text-xl font-bold text-white">Esquivas Dinámicas</h3>
+                        <h3 class="text-xl font-bold text-white">capoeira colombia</h3>
                     </div>
                     <div class="play-icon absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-300">
                         <div class="w-16 h-16 bg-amber-400/90 rounded-full flex items-center justify-center">

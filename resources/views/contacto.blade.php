@@ -2,7 +2,10 @@
 
 
     contacto 3128658195
-        
+       
+    @include('content.contacto')
+    
+     
         
 </x-layout>
         
